@@ -1,0 +1,34 @@
+{
+    "name": "kiwi-suite/validation",
+    "description": "kiwi-suite/validation",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Thomas Payer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^7.1",
+        "kiwi-suite/contract": "dev-develop",
+        "kiwi-suite/entity": "dev-develop"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.0.6",
+        "friendsofphp/php-cs-fixer": "^2.0",
+        "php-coveralls/php-coveralls": "^2.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "KiwiSuite\\Validation\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "KiwiSuiteTest\\Validation\\": "tests/src/",
+            "KiwiSuiteMisc\\Validation\\": "tests/misc/"
+        }
+    }
+}
