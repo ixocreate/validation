@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
-namespace KiwiSuite\Validation;
+namespace Ixocreate\Validation;
 
-use KiwiSuite\Contract\Validation\ResultInterface;
-use KiwiSuite\Validation\Violation\Violation;
-use KiwiSuite\Validation\Violation\ViolationCollection;
-use KiwiSuite\Validation\Violation\ViolationCollector;
+use Ixocreate\Contract\Validation\ResultInterface;
+use Ixocreate\Validation\Violation\Violation;
+use Ixocreate\Validation\Violation\ViolationCollection;
+use Ixocreate\Validation\Violation\ViolationCollector;
 
 final class Result implements ResultInterface
 {

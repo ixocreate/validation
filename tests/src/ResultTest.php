@@ -1,8 +1,8 @@
 <?php
-namespace KiwiSuiteTest\Validator;
+namespace IxocreateTest\Validator;
 
-use KiwiSuite\Validation\Result;
-use KiwiSuite\Validation\Violation\ViolationCollector;
+use Ixocreate\Validation\Result;
+use Ixocreate\Validation\Violation\ViolationCollector;
 use PHPUnit\Framework\TestCase;
 
 class ResultTest extends TestCase
@@ -28,8 +28,8 @@ class ResultTest extends TestCase
     }
 
     /**
-     * @covers \KiwiSuite\Validation\Result::isSuccessful
-     * @covers \KiwiSuite\Validation\Result::__construct
+     * @covers \Ixocreate\Validation\Result::isSuccessful
+     * @covers \Ixocreate\Validation\Result::__construct
      */
     public function testIsSuccessful()
     {
@@ -41,8 +41,8 @@ class ResultTest extends TestCase
     }
 
     /**
-     * @covers \KiwiSuite\Validation\Result::has
-     * @covers \KiwiSuite\Validation\Result::__construct
+     * @covers \Ixocreate\Validation\Result::has
+     * @covers \Ixocreate\Validation\Result::__construct
      */
     public function testHas()
     {
@@ -56,8 +56,8 @@ class ResultTest extends TestCase
     }
 
     /**
-     * @covers \KiwiSuite\Validation\Result::get
-     * @covers \KiwiSuite\Validation\Result::__construct
+     * @covers \Ixocreate\Validation\Result::get
+     * @covers \Ixocreate\Validation\Result::__construct
      */
     public function testGet()
     {
@@ -73,8 +73,8 @@ class ResultTest extends TestCase
     }
 
     /**
-     * @covers \KiwiSuite\Validation\Result::all
-     * @covers \KiwiSuite\Validation\Result::__construct
+     * @covers \Ixocreate\Validation\Result::all
+     * @covers \Ixocreate\Validation\Result::__construct
      */
     public function testAll()
     {
@@ -89,8 +89,8 @@ class ResultTest extends TestCase
     }
 
     /**
-     * @covers \KiwiSuite\Validation\Result::jsonSerialize
-     * @covers \KiwiSuite\Validation\Result::__construct
+     * @covers \Ixocreate\Validation\Result::jsonSerialize
+     * @covers \Ixocreate\Validation\Result::__construct
      */
     public function testJsonSerialize()
     {

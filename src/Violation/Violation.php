@@ -1,5 +1,5 @@
 <?php
-namespace KiwiSuite\Validation\Violation;
+namespace Ixocreate\Validation\Violation;
 
 final class Violation implements \JsonSerializable, \ArrayAccess
 {

@@ -1,10 +1,10 @@
 <?php
-namespace KiwiSuiteTest\Validator;
+namespace IxocreateTest\Validator;
 
-use KiwiSuite\Contract\Application\ConfiguratorRegistryInterface;
-use KiwiSuite\Contract\Application\ServiceRegistryInterface;
-use KiwiSuite\Contract\ServiceManager\ServiceManagerInterface;
-use KiwiSuite\Validation\Package;
+use Ixocreate\Contract\Application\ConfiguratorRegistryInterface;
+use Ixocreate\Contract\Application\ServiceRegistryInterface;
+use Ixocreate\Contract\ServiceManager\ServiceManagerInterface;
+use Ixocreate\Validation\Package;
 use PHPUnit\Framework\TestCase;
 
 class PackageTest extends TestCase

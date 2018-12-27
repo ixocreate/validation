@@ -1,7 +1,7 @@
 <?php
-namespace KiwiSuite\Validation\Violation;
+namespace Ixocreate\Validation\Violation;
 
-use KiwiSuite\Contract\Validation\ViolationCollectorInterface;
+use Ixocreate\Contract\Validation\ViolationCollectorInterface;
 
 final class ViolationCollector implements ViolationCollectorInterface
 {

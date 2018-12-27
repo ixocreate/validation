@@ -1,9 +1,9 @@
 <?php
-namespace KiwiSuiteTest\Validator;
+namespace IxocreateTest\Validator;
 
-use KiwiSuite\Contract\Validation\ValidatableInterface;
-use KiwiSuite\Validation\Result;
-use KiwiSuite\Validation\Validator;
+use Ixocreate\Contract\Validation\ValidatableInterface;
+use Ixocreate\Validation\Result;
+use Ixocreate\Validation\Validator;
 use PHPUnit\Framework\TestCase;
 
 class ValidatorTest extends TestCase
@@ -23,7 +23,7 @@ class ValidatorTest extends TestCase
     }
 
     /**
-     * @covers \KiwiSuite\Validation\Validator::supports
+     * @covers \Ixocreate\Validation\Validator::supports
      */
     public function testSupports()
     {
@@ -35,7 +35,7 @@ class ValidatorTest extends TestCase
     }
 
     /**
-     * @covers \KiwiSuite\Validation\Validator::validate
+     * @covers \Ixocreate\Validation\Validator::validate
      */
     public function testValidateException()
     {
@@ -45,7 +45,7 @@ class ValidatorTest extends TestCase
     }
 
     /**
-     * @covers \KiwiSuite\Validation\Validator::validate
+     * @covers \Ixocreate\Validation\Validator::validate
      */
     public function testValidatable()
     {

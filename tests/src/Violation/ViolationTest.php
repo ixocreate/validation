@@ -1,17 +1,17 @@
 <?php
-namespace KiwiSuiteTest\Validator\Violation;
+namespace IxocreateTest\Validator\Violation;
 
-use KiwiSuite\Validation\Violation\Violation;
+use Ixocreate\Validation\Violation\Violation;
 use PHPUnit\Framework\TestCase;
 
 class ViolationTest extends TestCase
 {
     /**
-     * @covers \KiwiSuite\Validation\Violation\Violation::__construct
-     * @covers \KiwiSuite\Validation\Violation\Violation::name
-     * @covers \KiwiSuite\Validation\Violation\Violation::message
-     * @covers \KiwiSuite\Validation\Violation\Violation::error
-     * @covers \KiwiSuite\Validation\Violation\Violation::jsonSerialize
+     * @covers \Ixocreate\Validation\Violation\Violation::__construct
+     * @covers \Ixocreate\Validation\Violation\Violation::name
+     * @covers \Ixocreate\Validation\Violation\Violation::message
+     * @covers \Ixocreate\Validation\Violation\Violation::error
+     * @covers \Ixocreate\Validation\Violation\Violation::jsonSerialize
      */
     public function testViolationCollection()
     {
@@ -33,8 +33,8 @@ class ViolationTest extends TestCase
     }
 
     /**
-     * @covers \KiwiSuite\Validation\Violation\Violation::__construct
-     * @covers \KiwiSuite\Validation\Violation\Violation::offsetExists
+     * @covers \Ixocreate\Validation\Violation\Violation::__construct
+     * @covers \Ixocreate\Validation\Violation\Violation::offsetExists
      */
     public function testOffsetExists()
     {
@@ -47,8 +47,8 @@ class ViolationTest extends TestCase
     }
 
     /**
-     * @covers \KiwiSuite\Validation\Violation\Violation::__construct
-     * @covers \KiwiSuite\Validation\Violation\Violation::offsetGet
+     * @covers \Ixocreate\Validation\Violation\Violation::__construct
+     * @covers \Ixocreate\Validation\Violation\Violation::offsetGet
      */
     public function testOffsetGet()
     {
@@ -63,8 +63,8 @@ class ViolationTest extends TestCase
     }
 
     /**
-     * @covers \KiwiSuite\Validation\Violation\Violation::__construct
-     * @covers \KiwiSuite\Validation\Violation\Violation::offsetSet
+     * @covers \Ixocreate\Validation\Violation\Violation::__construct
+     * @covers \Ixocreate\Validation\Violation\Violation::offsetSet
      */
     public function testOffsetSet()
     {
@@ -75,8 +75,8 @@ class ViolationTest extends TestCase
     }
 
     /**
-     * @covers \KiwiSuite\Validation\Violation\Violation::__construct
-     * @covers \KiwiSuite\Validation\Violation\Violation::offsetUnset
+     * @covers \Ixocreate\Validation\Violation\Violation::__construct
+     * @covers \Ixocreate\Validation\Violation\Violation::offsetUnset
      */
     public function testOffsetUnset()
     {

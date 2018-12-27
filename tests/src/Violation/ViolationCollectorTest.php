@@ -1,14 +1,14 @@
 <?php
-namespace KiwiSuiteTest\Validator\Violation;
+namespace IxocreateTest\Validator\Violation;
 
-use KiwiSuite\Validation\Violation\ViolationCollector;
+use Ixocreate\Validation\Violation\ViolationCollector;
 use PHPUnit\Framework\TestCase;
 
 class ViolationCollectorTest extends TestCase
 {
     /**
-     * @covers \KiwiSuite\Validation\Violation\ViolationCollector::add
-     * @covers \KiwiSuite\Validation\Violation\ViolationCollector::violations
+     * @covers \Ixocreate\Validation\Violation\ViolationCollector::add
+     * @covers \Ixocreate\Validation\Violation\ViolationCollector::violations
      */
     public function testViolation()
     {

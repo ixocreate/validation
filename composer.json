@@ -22,13 +22,13 @@
     },
     "autoload": {
         "psr-4": {
-            "KiwiSuite\\Validation\\": "src/"
+            "Ixocreate\\Validation\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "KiwiSuiteTest\\Validation\\": "tests/src/",
-            "KiwiSuiteMisc\\Validation\\": "tests/misc/"
+            "IxocreateTest\\Validation\\": "tests/src/",
+            "IxocreateMisc\\Validation\\": "tests/misc/"
         }
     }
 }

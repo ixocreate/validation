@@ -1,8 +1,8 @@
 <?php
-namespace KiwiSuite\Validation;
+namespace Ixocreate\Validation;
 
-use KiwiSuite\Contract\Validation\ValidatableInterface;
-use KiwiSuite\Validation\Violation\ViolationCollector;
+use Ixocreate\Contract\Validation\ValidatableInterface;
+use Ixocreate\Validation\Violation\ViolationCollector;
 
 final class Validator
 {

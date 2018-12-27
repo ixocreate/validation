@@ -1,7 +1,7 @@
 <?php
-namespace KiwiSuite\Validation\Violation;
+namespace Ixocreate\Validation\Violation;
 
-use KiwiSuite\Entity\Collection\AbstractCollection;
+use Ixocreate\Entity\Collection\AbstractCollection;
 
 final class ViolationCollection extends AbstractCollection
 {
