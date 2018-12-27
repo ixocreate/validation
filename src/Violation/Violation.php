@@ -1,4 +1,12 @@
 <?php
+/**
+ * @link https://github.com/ixocreate
+ * @copyright IXOCREATE GmbH
+ * @license MIT License
+ */
+
+declare(strict_types=1);
+
 namespace Ixocreate\Validation\Violation;
 
 final class Violation implements \JsonSerializable, \ArrayAccess
@@ -7,10 +15,12 @@ final class Violation implements \JsonSerializable, \ArrayAccess
      * @var string
      */
     private $name;
+
     /**
      * @var string
      */
     private $error;
+
     /**
      * @var string
      */
@@ -69,13 +79,13 @@ final class Violation implements \JsonSerializable, \ArrayAccess
      */
     public function offsetExists($offset)
     {
-        return in_array($offset, ['name', 'error', 'message']);
+        return \in_array($offset, ['name', 'error', 'message']);
     }
 
     /**
      * @param mixed $offset
-     * @return mixed|void
      * @throws \Exception
+     * @return mixed|void
      */
     public function offsetGet($offset)
     {

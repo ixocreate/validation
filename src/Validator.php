@@ -1,4 +1,12 @@
 <?php
+/**
+ * @link https://github.com/ixocreate
+ * @copyright IXOCREATE GmbH
+ * @license MIT License
+ */
+
+declare(strict_types=1);
+
 namespace Ixocreate\Validation;
 
 use Ixocreate\Contract\Validation\ValidatableInterface;
@@ -21,8 +29,8 @@ final class Validator
 
     /**
      * @param $value
-     * @return Result
      * @throws \Exception
+     * @return Result
      */
     public function validate($value): Result
     {

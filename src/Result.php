@@ -1,5 +1,12 @@
 <?php
+/**
+ * @link https://github.com/ixocreate
+ * @copyright IXOCREATE GmbH
+ * @license MIT License
+ */
+
 declare(strict_types=1);
+
 namespace Ixocreate\Validation;
 
 use Ixocreate\Contract\Validation\ResultInterface;
@@ -27,7 +34,7 @@ final class Result implements ResultInterface
      */
     public function isSuccessful(): bool
     {
-        return ($this->violations->count() === 0);
+        return $this->violations->count() === 0;
     }
 
     /**
@@ -36,7 +43,7 @@ final class Result implements ResultInterface
      */
     public function has(string $name): bool
     {
-        return ($this->get($name)->count() > 0);
+        return $this->get($name)->count() > 0;
     }
 
     /**
@@ -45,8 +52,8 @@ final class Result implements ResultInterface
      */
     public function get(string $name): \Traversable
     {
-        return $this->violations->filter(function (Violation $violation) use ($name){
-            return ($violation->name() === $name);
+        return $this->violations->filter(function (Violation $violation) use ($name) {
+            return $violation->name() === $name;
         });
     }
 
@@ -67,7 +74,7 @@ final class Result implements ResultInterface
 
         /** @var Violation $violation */
         foreach ($this->violations as $violation) {
-            if (!array_key_exists($violation->name(), $result)) {
+            if (!\array_key_exists($violation->name(), $result)) {
                 $result[$violation->name()] = [];
             }
 

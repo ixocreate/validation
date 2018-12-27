@@ -1,4 +1,12 @@
 <?php
+/**
+ * @link https://github.com/ixocreate
+ * @copyright IXOCREATE GmbH
+ * @license MIT License
+ */
+
+declare(strict_types=1);
+
 namespace IxocreateTest\Validator\Violation;
 
 use Ixocreate\Validation\Violation\Violation;
@@ -16,7 +24,7 @@ class ViolationCollectionTest extends TestCase
         $this->assertCount(0, $violationCollection);
 
         $violationCollection = new ViolationCollection([
-            'test' => new Violation("name", "invalid.name")
+            'test' => new Violation("name", "invalid.name"),
         ]);
         $this->assertCount(1, $violationCollection);
     }

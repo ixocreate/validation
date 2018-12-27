@@ -1,4 +1,10 @@
 <?php
+/**
+ * @link https://github.com/ixocreate
+ * @copyright IXOCREATE GmbH
+ * @license MIT License
+ */
+
 declare(strict_types=1);
 
 namespace Ixocreate\Validation;
@@ -7,13 +13,9 @@ use Ixocreate\Contract\Application\ConfiguratorRegistryInterface;
 use Ixocreate\Contract\Application\PackageInterface;
 use Ixocreate\Contract\Application\ServiceRegistryInterface;
 use Ixocreate\Contract\ServiceManager\ServiceManagerInterface;
-use Ixocreate\Entity\BootstrapItem\TypeBootstrapItem;
-use Ixocreate\Entity\Type\Type;
-use Ixocreate\Entity\Type\TypeSubManager;
 
 final class Package implements PackageInterface
 {
-
     /**
      * @param ConfiguratorRegistryInterface $configuratorRegistry
      */

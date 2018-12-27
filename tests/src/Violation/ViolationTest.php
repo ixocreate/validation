@@ -1,4 +1,12 @@
 <?php
+/**
+ * @link https://github.com/ixocreate
+ * @copyright IXOCREATE GmbH
+ * @license MIT License
+ */
+
+declare(strict_types=1);
+
 namespace IxocreateTest\Validator\Violation;
 
 use Ixocreate\Validation\Violation\Violation;
@@ -21,14 +29,14 @@ class ViolationTest extends TestCase
         $this->assertSame("message", $violation->message());
         $this->assertSame([
             'error' => 'error',
-            'message' => 'message'
+            'message' => 'message',
         ], $violation->jsonSerialize());
 
         $violation = new Violation("name", "error");
         $this->assertNull($violation->message());
         $this->assertSame([
             'error' => 'error',
-            'message' => null
+            'message' => null,
         ], $violation->jsonSerialize());
     }
 
