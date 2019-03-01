@@ -13,6 +13,7 @@
     "require": {
         "php": "^7.1",
         "ixocreate/contract": "dev-develop",
+        "ixocreate/collection": "dev-develop",
         "ixocreate/entity": "dev-develop"
     },
     "require-dev": {
