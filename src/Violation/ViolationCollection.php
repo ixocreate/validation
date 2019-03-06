@@ -24,7 +24,7 @@ final class ViolationCollection extends AbstractCollection
          */
         $items = $items->each(function ($value) {
             if (!($value instanceof Violation)) {
-                throw new InvalidType('All items must be of type ' . Violation::class . '. Got item of type ' . gettype($value));
+                throw new InvalidType('All items must be of type ' . Violation::class . '. Got item of type ' . \gettype($value));
             }
         });
 
