@@ -1,10 +1,10 @@
-# IXOCREATE validation
+# IXOCREATE Validation Library
 
 [![Build Status](https://travis-ci.com/ixocreate/validation.svg?branch=master)](https://travis-ci.com/ixocreate/validation)
 [![Coverage Status](https://coveralls.io/repos/github/ixocreate/validation/badge.svg?branch=develop)](https://coveralls.io/github/ixocreate/validation?branch=develop)
 [![Packagist](https://img.shields.io/packagist/v/ixocreate/validation.svg)](https://packagist.org/packages/ixocreate/validation)
-[![Packagist Pre Release](https://img.shields.io/packagist/vpre/ixocreate/validation.svg)](https://packagist.org/packages/ixocreate/validation)
-[![Packagist](https://img.shields.io/packagist/l/ixocreate/validation.svg)](https://packagist.org/packages/ixocreate/validation)
+[![PHP Version](https://img.shields.io/packagist/php-v/ixocreate/validation.svg)](https://packagist.org/packages/ixocreate/validation)
+[![License](https://img.shields.io/github/license/ixocreate/validation.svg)](LICENSE)
 
 ## Installation
 
@@ -20,6 +20,18 @@ composer require ixocreate/validation
 composer install --dev
 phpunit
 ```
+
+## Documentation
+
+Learn more about IXOCREATE by reading its [Documentation](https://ixocreate.github.io/).
+
+## Changelog
+
+Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
+
+## Security Vulnerabilities
+
+If you discover security vulnerabilities, please address issues directly to opensource@ixocreate.com via e-mail.
 
 ## License
 
