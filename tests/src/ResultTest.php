@@ -7,7 +7,7 @@
 
 declare(strict_types=1);
 
-namespace IxocreateTest\Validator;
+namespace Ixocreate\Test\Validator;
 
 use Ixocreate\Validation\Result;
 use Ixocreate\Validation\Violation\ViolationCollector;

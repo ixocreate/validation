@@ -9,7 +9,6 @@ declare(strict_types=1);
 
 namespace Ixocreate\Validation;
 
-use Ixocreate\Contract\Validation\ResultInterface;
 use Ixocreate\Validation\Violation\Violation;
 use Ixocreate\Validation\Violation\ViolationCollection;
 use Ixocreate\Validation\Violation\ViolationCollector;

@@ -7,7 +7,7 @@
 
 declare(strict_types=1);
 
-namespace IxocreateTest\Validator\Violation;
+namespace Ixocreate\Test\Validator\Violation;
 
 use Ixocreate\Collection\Exception\InvalidType;
 use Ixocreate\Validation\Violation\Violation;

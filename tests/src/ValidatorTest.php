@@ -7,9 +7,9 @@
 
 declare(strict_types=1);
 
-namespace IxocreateTest\Validator;
+namespace Ixocreate\Test\Validator;
 
-use Ixocreate\Contract\Validation\ValidatableInterface;
+use Ixocreate\Validation\ValidatableInterface;
 use Ixocreate\Validation\Result;
 use Ixocreate\Validation\Validator;
 use PHPUnit\Framework\TestCase;

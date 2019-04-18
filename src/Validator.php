@@ -9,7 +9,6 @@ declare(strict_types=1);
 
 namespace Ixocreate\Validation;
 
-use Ixocreate\Contract\Validation\ValidatableInterface;
 use Ixocreate\Validation\Violation\ViolationCollector;
 
 final class Validator
@@ -29,8 +28,8 @@ final class Validator
 
     /**
      * @param $value
-     * @throws \Exception
      * @return Result
+     * @throws \Exception
      */
     public function validate($value): Result
     {

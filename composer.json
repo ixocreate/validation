@@ -1,6 +1,6 @@
 {
     "name": "ixocreate/validation",
-    "description": "Validation implementation for IXOCREATE",
+    "description": "IXOCREATE Validation Library",
     "license": "MIT",
     "type": "library",
     "authors": [
@@ -12,12 +12,11 @@
     "prefer-stable": true,
     "require": {
         "php": "^7.1",
-        "ixocreate/contract": "dev-develop",
-        "ixocreate/collection": "dev-develop",
-        "ixocreate/entity": "dev-develop"
+        "ext-json": "*",
+        "ixocreate/collection": "dev-consolidate"
     },
     "require-dev": {
-        "ixocreate/coding-standard": "^1.0.1",
+        "ixocreate/coding-standard": "^1.0",
         "php-coveralls/php-coveralls": "^2.1",
         "phpunit/phpunit": "^7.0"
     },
@@ -28,8 +27,8 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "IxocreateTest\\Validation\\": "tests/src/",
-            "IxocreateMisc\\Validation\\": "tests/misc/"
+            "Ixocreate\\Test\\Validation\\": "tests/src/",
+            "Ixocreate\\Misc\\Validation\\": "tests/misc/"
         }
     },
     "scripts": {
