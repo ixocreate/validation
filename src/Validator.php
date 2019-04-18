@@ -28,8 +28,8 @@ final class Validator
 
     /**
      * @param $value
-     * @return Result
      * @throws \Exception
+     * @return Result
      */
     public function validate($value): Result
     {
