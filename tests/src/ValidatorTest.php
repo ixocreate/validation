@@ -9,8 +9,8 @@ declare(strict_types=1);
 
 namespace Ixocreate\Test\Validator;
 
-use Ixocreate\Validation\ValidatableInterface;
 use Ixocreate\Validation\Result;
+use Ixocreate\Validation\ValidatableInterface;
 use Ixocreate\Validation\Validator;
 use PHPUnit\Framework\TestCase;
 
