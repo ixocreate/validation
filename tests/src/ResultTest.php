@@ -7,7 +7,7 @@
 
 declare(strict_types=1);
 
-namespace IxocreateTest\Validator;
+namespace Ixocreate\Test\Validator;
 
 use Ixocreate\Validation\Result;
 use Ixocreate\Validation\Violation\ViolationCollector;
@@ -75,8 +75,8 @@ class ResultTest extends TestCase
         $result = new Result($this->violationCollector);
         $this->assertSame(1, $result->get("name")->count());
         $this->assertSame(2, $result->get("email")->count());
-        $this->assertTrue(\in_array('invalid.email', $result->get("email")->parts("error")));
-        $this->assertTrue(\in_array('not.an.email', $result->get("email")->parts("error")));
+        $this->assertTrue(\in_array('invalid.email', $result->get("email")->extract("error")->toArray()));
+        $this->assertTrue(\in_array('not.an.email', $result->get("email")->extract("error")->toArray()));
         $this->assertSame(0, $result->get("something_else")->count());
     }
 
@@ -91,8 +91,8 @@ class ResultTest extends TestCase
 
         $result = new Result($this->violationCollector);
         $this->assertSame(3, $result->all()->count());
-        $this->assertTrue(\in_array('name', $result->all()->parts("name")));
-        $this->assertTrue(\in_array('email', $result->all()->parts("name")));
+        $this->assertTrue(\in_array('name', $result->all()->extract("name")->toArray()));
+        $this->assertTrue(\in_array('email', $result->all()->extract("name")->toArray()));
     }
 
     /**

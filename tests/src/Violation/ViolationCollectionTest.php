@@ -7,25 +7,38 @@
 
 declare(strict_types=1);
 
-namespace IxocreateTest\Validator\Violation;
+namespace Ixocreate\Test\Validator\Violation;
 
+use Ixocreate\Collection\Exception\InvalidType;
 use Ixocreate\Validation\Violation\Violation;
 use Ixocreate\Validation\Violation\ViolationCollection;
 use PHPUnit\Framework\TestCase;
 
 class ViolationCollectionTest extends TestCase
 {
-    /**
-     * @covers \Ixocreate\Validation\Violation\ViolationCollection::__construct
-     */
-    public function testViolationCollection()
+    private function data()
     {
-        $violationCollection = new ViolationCollection([]);
-        $this->assertCount(0, $violationCollection);
+        return [
+            'violation1' => new Violation("name", "invalid.name"),
+            'violation2' => new Violation("name", "invalid.name"),
+            'violation3' => new Violation("name", "invalid.name"),
+        ];
+    }
 
-        $violationCollection = new ViolationCollection([
-            'test' => new Violation("name", "invalid.name"),
-        ]);
-        $this->assertCount(1, $violationCollection);
+    public function testCollection()
+    {
+        $data = $this->data();
+
+        $collection = new ViolationCollection($data);
+        $this->assertCount(3, $collection);
+
+        $collection = new ViolationCollection($collection);
+        $this->assertSame($data, $collection->toArray());
+    }
+
+    public function testInvalidTypeException()
+    {
+        $this->expectException(InvalidType::class);
+        (new ViolationCollection(['test' => 'One']))->toArray();
     }
 }

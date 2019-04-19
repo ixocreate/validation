@@ -9,7 +9,7 @@ declare(strict_types=1);
 
 namespace Ixocreate\Validation\Violation;
 
-use Ixocreate\Contract\Validation\ViolationCollectorInterface;
+use Ixocreate\Validation\ViolationCollectorInterface;
 
 final class ViolationCollector implements ViolationCollectorInterface
 {
