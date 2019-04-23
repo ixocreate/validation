@@ -9,7 +9,7 @@ declare(strict_types=1);
 
 namespace Ixocreate\Test\Validator;
 
-use Ixocreate\Validation\Result;
+use Ixocreate\Validation\Result\Result;
 use Ixocreate\Validation\Violation\ViolationCollector;
 use PHPUnit\Framework\TestCase;
 

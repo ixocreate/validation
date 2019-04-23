@@ -7,7 +7,7 @@
 
 declare(strict_types=1);
 
-namespace Ixocreate\Validation;
+namespace Ixocreate\Validation\Result;
 
 interface ResultInterface extends \JsonSerializable
 {
