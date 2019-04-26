@@ -7,7 +7,7 @@
 
 declare(strict_types=1);
 
-namespace Ixocreate\Test\Validator;
+namespace Ixocreate\Test\Validation;
 
 use Ixocreate\Validation\Result\Result;
 use Ixocreate\Validation\ValidatableInterface;

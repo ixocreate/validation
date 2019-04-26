@@ -7,7 +7,7 @@
 
 declare(strict_types=1);
 
-namespace Ixocreate\Test\Validator\Violation;
+namespace Ixocreate\Test\Validation\Violation;
 
 use Ixocreate\Validation\Violation\ViolationCollector;
 use PHPUnit\Framework\TestCase;
