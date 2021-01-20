@@ -23,7 +23,7 @@ class ValidatorTest extends TestCase
 
     private $validatable;
 
-    public function setUp()
+    public function setUp(): void
     {
         $this->validator = new Validator();
         $this->validatable = $this->getMockBuilder(ValidatableInterface::class)
