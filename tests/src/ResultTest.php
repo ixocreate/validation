@@ -25,7 +25,7 @@ class ResultTest extends TestCase
      */
     private $emptyViolationCollector;
 
-    public function setUp()
+    public function setUp(): void
     {
         $this->emptyViolationCollector = new ViolationCollector();
 
@@ -36,8 +36,8 @@ class ResultTest extends TestCase
     }
 
     /**
-     * @covers \Ixocreate\Validation\Result::isSuccessful
-     * @covers \Ixocreate\Validation\Result::__construct
+     * @covers \Ixocreate\Validation\Result\Result::isSuccessful
+     * @covers \Ixocreate\Validation\Result\Result::__construct
      */
     public function testIsSuccessful()
     {
@@ -49,8 +49,8 @@ class ResultTest extends TestCase
     }
 
     /**
-     * @covers \Ixocreate\Validation\Result::has
-     * @covers \Ixocreate\Validation\Result::__construct
+     * @covers \Ixocreate\Validation\Result\Result::has
+     * @covers \Ixocreate\Validation\Result\Result::__construct
      */
     public function testHas()
     {
@@ -64,8 +64,8 @@ class ResultTest extends TestCase
     }
 
     /**
-     * @covers \Ixocreate\Validation\Result::get
-     * @covers \Ixocreate\Validation\Result::__construct
+     * @covers \Ixocreate\Validation\Result\Result::get
+     * @covers \Ixocreate\Validation\Result\Result::__construct
      */
     public function testGet()
     {
@@ -81,8 +81,8 @@ class ResultTest extends TestCase
     }
 
     /**
-     * @covers \Ixocreate\Validation\Result::all
-     * @covers \Ixocreate\Validation\Result::__construct
+     * @covers \Ixocreate\Validation\Result\Result::all
+     * @covers \Ixocreate\Validation\Result\Result::__construct
      */
     public function testAll()
     {
@@ -96,8 +96,8 @@ class ResultTest extends TestCase
     }
 
     /**
-     * @covers \Ixocreate\Validation\Result::jsonSerialize
-     * @covers \Ixocreate\Validation\Result::__construct
+     * @covers \Ixocreate\Validation\Result\Result::jsonSerialize
+     * @covers \Ixocreate\Validation\Result\Result::__construct
      */
     public function testJsonSerialize()
     {
